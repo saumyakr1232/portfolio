@@ -11,8 +11,20 @@ export const personalInfo = {
     "Full Stack Developer", 
     "LLM & AI Enthusiast",
     "React & Electron Developer"
+  ],
+  badges: [
+    "FastAPI Expert",
+    "Electron",
+    "React",
+    
   ]
 };
+
+export const quickStats = {
+  yearsExp: 3.5,
+  pythonApps: 10,
+  timeSaved: 60
+}
 
 export const socialLinks = {
   github: "https://github.com/saumyakr1232",

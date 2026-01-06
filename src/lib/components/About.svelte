@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { personalInfo, pythonHighlights } from '$lib/data/resume';
+  import { personalInfo, pythonHighlights, quickStats } from '$lib/data/resume';
 </script>
 
 <section id="about" class="relative bg-dots">
@@ -38,15 +38,15 @@
         <!-- Quick Stats -->
         <div class="grid grid-cols-3 gap-6">
           <div class="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-            <div class="text-3xl font-bold gradient-text">2.5+</div>
+            <div class="text-3xl font-bold gradient-text">{quickStats.yearsExp}+</div>
             <div class="text-sm text-gray-400 mt-1">Years Exp.</div>
           </div>
           <div class="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-            <div class="text-3xl font-bold gradient-text">10+</div>
-            <div class="text-sm text-gray-400 mt-1">Python Tools</div>
+            <div class="text-3xl font-bold gradient-text">{quickStats.pythonApps}+</div>
+            <div class="text-sm text-gray-400 mt-1">Python Apps</div>
           </div>
           <div class="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-            <div class="text-3xl font-bold gradient-text">60%</div>
+            <div class="text-3xl font-bold gradient-text">{quickStats.timeSaved}%</div>
             <div class="text-sm text-gray-400 mt-1">Time Saved</div>
           </div>
         </div>
@@ -74,11 +74,15 @@
           
           <!-- Floating badges -->
           <div class="absolute -top-4 -right-4 px-4 py-2 rounded-full bg-purple-500/20 border border-purple-500/30 backdrop-blur-sm animate-float">
-            <span class="text-sm font-medium text-purple-300">FastAPI Expert</span>
+            <span class="text-sm font-medium text-purple-300">{personalInfo.badges[0]}</span>
           </div>
           <div class="absolute -bottom-4 -left-4 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-500/30 backdrop-blur-sm animate-float" style="animation-delay: -2s;">
-            <span class="text-sm font-medium text-blue-300">LLM Developer</span>
+            <span class="text-sm font-medium text-blue-300">{personalInfo.badges[1]}</span>
           </div>
+          <div class="absolute -top-0 -left-4 px-4 py-2 rounded-full bg-gray-500/20 border border-blue-500/30 backdrop-blur-sm animate-float" style="animation-delay: -4s;">
+            <span class="text-sm font-medium text-gray-300">{personalInfo.badges[2]}</span>
+          </div>
+          
         </div>
       </div>
     </div>
