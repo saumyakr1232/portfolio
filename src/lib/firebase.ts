@@ -1,21 +1,19 @@
-// Firebase configuration for saumya-kumar project
-// Replace with your actual Firebase config from Firebase Console
-// Go to: Firebase Console > Project Settings > Your apps > Web app
-
-import { initializeApp } from 'firebase/app';
-import { getAnalytics, logEvent, isSupported } from 'firebase/analytics';
-import type { Analytics } from 'firebase/analytics';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics, isSupported, logEvent, type Analytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// TODO: Replace these values with your actual Firebase config
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyBJ5qPWCCMBezhwP2KG7dbDzWgEdOChCi4",
   authDomain: "saumya-kumar.firebaseapp.com",
   projectId: "saumya-kumar",
   storageBucket: "saumya-kumar.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  messagingSenderId: "525126500878",
+  appId: "1:525126500878:web:0e56b2440270f3e86e325f",
+  measurementId: "G-0SMVLGSSZY"
 };
 
 // Initialize Firebase
