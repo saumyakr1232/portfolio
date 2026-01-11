@@ -121,6 +121,34 @@ export const projects = [
       "HIL and MIL diagnostic support"
     ],
     featured: true
+  },
+  {
+    title: "Calories Tracker",
+    period: "2024",
+    company: "Personal Project",
+    description: "AI-powered food analysis application with image recognition. Provides detailed nutritional breakdown including calories, macros, and micros with RESTful API endpoints and OpenAPI documentation.",
+    technologies: ["Python", "FastAPI", "SQLAlchemy", "OpenAI GPT-4", "PostgreSQL"],
+    highlights: [
+      "AI-powered food analysis from text and images",
+      "Detailed nutritional breakdown (calories, macros, micros)",
+      "Food logging and tracking with database storage"
+    ],
+    featured: false,
+    github: "https://github.com/saumyakr1232/CaloriesTracker"
+  },
+  {
+    title: "CAN Message Visualizer",
+    period: "2024",
+    company: "Personal Project",
+    description: "A high-performance CAN trace file visualization tool supporting BLF and ASC formats. Features interactive plotting, virtual scrolling for millions of messages, and DBC database decoding.",
+    technologies: ["Python", "PySide6", "PyQtGraph", "SQLite", "cantools"],
+    highlights: [
+      "Real-time streaming of decoded signals during parsing",
+      "Interactive plotting with zoom, pan, and fullscreen support",
+      "High-performance table view with virtual scrolling"
+    ],
+    featured: false,
+    github: "https://github.com/saumyakr1232/can_msg_visualizer"
   }
 ];
 
